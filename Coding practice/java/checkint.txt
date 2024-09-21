@@ -1,0 +1,14 @@
+import java.util.*;
+class checkint{
+public static void main(String[] args){
+int n;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter your number: ");
+if(n=sc.hasnextInt()){
+System.out.println("It is interger");
+break;
+else
+System.out.println("It is not integer");
+break;
+}
+}

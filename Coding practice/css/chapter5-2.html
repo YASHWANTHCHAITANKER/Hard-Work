@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter5-2</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        } 
+         li{
+            /* display: inline; */
+            list-style: square outside;
+        }
+        header{
+            background-color: coral;
+            height: 70px;
+            position: sticky;
+            top: 0px;
+            z-index: 3;
+
+        }
+        .container{
+            text-align: center;
+            background-color: cornflowerblue;
+            height: 150vh;
+            width: 50vw;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+        .box1{
+            height: 32px;
+            width: 50px;
+            background-color: crimson;
+            position: relative;
+            left: 713px;
+            bottom: 50px;
+            top: -15px;
+            /* border-radius: 4px; */
+            /* margin: auto;
+            text-align: center; */
+        }
+        .box2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(0, 0, 0);
+            color:white;
+            position: relative;
+            top: 890px;
+        }
+        .box3{
+            margin-top: 10px;
+        }
+        img{
+            border-radius: 80px;
+        }
+        h3{
+            background-color: brown;
+            color: aliceblue;
+        }
+        ul{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> HOME </li>
+                <li>ABOUT US</li>
+                <li>CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>
+            I AM A CONTAINER.
+        </p>
+        <div class="box1">
+            <img src="lion.webp" alt="lion" height="30px">
+        </div>
+        <div class="box2">
+            THIS IS BOX-2.
+        </div>
+    </div>
+    <div class="box3">
+    <h3> MOBILE PHONE BRANDS </h3>
+    <ul>
+        <li> APPLE </li>
+        <li> SAMSUNG </li>
+        <li> OPPO </li>
+        <li> VIVO </li>
+    </ul>
+    </div>
+    
+</body>
+</html>

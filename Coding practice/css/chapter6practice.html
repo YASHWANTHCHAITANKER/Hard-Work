@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter-6 practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 10vh;
+            width: 104.1vw;
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            display: inline;
+            list-style: none;
+            margin: 25px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .right {
+            background-color: blueviolet;
+            height: 80vh;
+            width: 45vw;
+            /* float: right; */
+        }
+
+        .left {
+            background-color: burlywood;
+            height: 80vh;
+            width: 45vw;
+            /* float: left; */
+        }
+
+        /* nav{
+            display: flex;
+             flex: center; 
+             justify-content: center; 
+            align-items: center;
+            height: 0vh;
+        }  */
+        .box {
+            position: relative;
+            left: 1070px;
+            top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="dolphin.png" alt="lion image" height="65px">
+                <div class="box">
+                    <li> HOME </li>
+                    <li> ABOUT US </li>
+                    <li> CONTACT US </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="box1">
+        <img src="whale.jfif" alt="whale image" width="1550px" height="600px" class="image">
+    </div>
+    <div class="container">
+        <div class="right">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore et adipisci praesentium libero
+            perspiciatis illo fuga cumque tenetur, nostrum soluta eius amet aliquam exercitationem voluptas quae nisi
+            debitis explicabo quaerat! Quae eius molestias nulla, aperiam atque at dolorem illo unde.
+        </div>
+        <div class="left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic, autem quidem consectetur inventore, iste,
+            cupiditate nisi ea incidunt nemo omnis neque molestiae vitae repudiandae. Sint alias obcaecati, accusamus
+            illum non quo rem, animi soluta magni ab, iusto laborum eveniet?
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: gray;
+            color: black;
+            height: 50px;
+            width: 100vw;
+        }
+
+        main {
+            background-color: rgb(78, 239, 159);
+            color: white;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        ul {
+            display: inline-flex;
+            padding: 15px;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 30px;
+        }
+
+        .bar {
+            width: 100vw;
+            height: 2px;
+            background-color: rgb(1, 9, 9);
+            animation: loading 3s ease-in-out;
+        }
+
+        .box1 {
+            display: flex;
+            position: relative;
+            bottom: 60px;
+            right: 50px;
+            /* justify-content: center; */
+            /* align-items: center; */
+            transform: translateY(60px)
+        }
+
+        img {
+            animation: rotate 1s ease infinite;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+                height: 0px;
+            }
+
+            25% {
+                width: 25vw;
+                height: 2px;
+            }
+
+            50% {
+                width: 50vw;
+                height: 2px;
+            }
+
+            75% {
+                width: 75vw;
+                height: 2px;
+            }
+
+            100% {
+                width: 100vw;
+                height: 2px;
+            }
+
+        }
+
+        @keyframes rotate {
+
+            0%{
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            } 
+        }
+        /* .slider{
+            background-color: white;
+            height: 500px;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .img1{
+            display: block;
+            margin: auto;
+    
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="bar"></div>
+    <header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box1">
+            <img src="dragonlogo.png" alt="logo" height="200px">
+        </div>
+        <!-- <div class="slider">
+            <img src="https://images.unsplash.com/photo-1501159606039-efa80afc41f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="images" height="500px" width="1200px" class="img1">
+
+            <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80" alt="image" height=""  class="img2"> -->
+
+            <!-- <img src="https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt="iamge" height="" class="img3"> 
+        </div> -->
+
+    </main>
+
+</body>
+
+</html>

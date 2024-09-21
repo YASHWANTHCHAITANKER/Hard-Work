@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(3, 13, 13);
+            color: blanchedalmond;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+        nav{
+            display: inline-flex;
+            position: relative;
+            left: 1100px;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px 25px;
+            padding: 5px 0px;
+        }
+
+        .container {
+            background-color: blanchedalmond;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 40vw 40vw;
+            grid-template-rows: 90vh;
+            grid-gap: 10px 300px;
+
+        }
+
+        .box1 {
+            background-color: rgb(179, 133, 208);
+            color:rgb(0, 0, 0)
+        }
+
+        .box2 {
+            background-color: rgb(97, 202, 215);
+            color:rgb(0, 0, 0)
+        }
+        @media screen and (max-width:1250px) { 
+            .container{
+                background-color: aqua;
+            }
+            .box1{
+                background-color: chartreuse;
+            }
+            .box2{
+                background-color: cornflowerblue;
+            }
+        }
+        @media screen and (max-width:700px) { 
+            .container{
+                background-color: rgb(42, 176, 107);
+            }
+            .box1{
+                background-color: chartreuse;
+            }
+            .box2{
+                background-color: cornflowerblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="yash.png" alt="logo" height="50px">
+        <nav>
+            <div class="header"></div>
+            <ul>
+                <li> HOME </li>
+                <li> CONTACT US </li>
+                <li> ABOUT US </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias non iste excepturi soluta deleniti
+            sapiente
+            reiciendis placeat tenetur sit commodi sint iure nisi aut explicabo atque, quisquam libero. Officiis
+            asperiores
+            ducimus earum accusantium voluptatibus expedita nulla soluta ipsam sit sint?
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate quia provident sunt soluta et
+            tempora nostrum harum odio numquam consequatur molestias voluptatem sapiente cumque corrupti perferendis
+            temporibus exercitationem possimus, iure dolorum? Fugit explicabo voluptates totam qui deleniti. Sit, magni.
+        </div>
+
+    </div>
+</body>
+
+</html>

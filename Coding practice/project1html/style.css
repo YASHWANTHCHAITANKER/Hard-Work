@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    height: 12vh;
+    width: 100%;
+    background-color:black;
+    color: white;
+    position: sticky;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header nav ul{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}

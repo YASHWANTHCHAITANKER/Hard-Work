@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: chartreuse;
+            height: 50px;
+            width: 100vw;
+        }
+
+        main {
+            background-color: crimson;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slider{
+            height: 500px;
+            width: 100vw;
+            background-color: white;
+            border: 3px dotted black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            /* margin: auto; */
+        }
+        @keyframes slide1{
+            0%{
+                transform: translate(-8vw);
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+        @keyframes slide2{
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        }
+        @keyframes slide3{
+            0%{
+                transform: translate(8vw);
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        }
+        .img1{
+            transform: translate(-8vw);
+            animation: slide2 1s 2s forwards;
+        }
+        .img2{
+            transform: translate(0vw);
+            animation: slide1 1s 2s forwards;
+        }
+        .img3{
+            transform: translate(8vw);
+            animation: slide3 1s 2s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="slider">
+            <img class="img1" src="https://i.pinimg.com/originals/1b/5b/57/1b5b57476b0aaa7da9fb1da49c126f60.jpg" alt="image">
+            <img class="img2" src="http://wallpapers.net/jaguar-animal-wallpaper-for-desktop-mobiles/download/1500x500.jpg" alt="image">
+            <img class="img3" src="http://wallpapers.net/download-beautiful-zoo-tiger-wallpaper-in-hd/download/1500x500.jpg" alt="image">
+        </div>
+    </main>
+    
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.red{
+  
+  background-color: rgb(26, 89, 86);
+  color: wheat;
+  height: 200px;
+}
+.green{
+  background-color: green;
+  color: black;
+}

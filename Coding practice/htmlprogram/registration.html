@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> registration page </title>
+    </head>
+    <body>
+        <center>
+        <div style="border: solid 2px black; background-color: cyan; width: 40%; height: 650px;">
+        <header><u><h2 style="padding-bottom: 50px;">Registration page</h2></u></header>
+        <form action="backend.php">
+            <div style="text-align: left; margin-left: 20px;">
+            <div>
+                Name : <input type="text"><br>
+            </div><br>
+            <div>
+                Surname : <input type="text"><br>
+            </div><br>
+            <div>
+                Father Name : <input type="text"><br>
+            </div><br>
+            <div>
+                Date Of Birth : <input type="date" ><br>
+            </div><br>
+            <div>
+                Select Your Gender : <input type="radio" name="Gender">Male <input type="radio" name="Gender">Female<input type="radio" name="Gender"> Others 
+            </div><br>
+            <div>
+                Phone Number : <input type="number">
+            </div><br>
+            <div>
+                Email Id* : <input type="email">
+            </div><br>
+            <div>
+                Address : <textarea rows="3"></textarea>
+            </div><br>
+            
+            <div>
+                Select Your Qualification :
+                    <select name="education">
+                        <option value="below ssc">BELOW SSC</option>
+                        <option value="SSC">SSC</option>
+                        <option value="under graduate">UNDER GRADUATE</option>
+                        <option value="post graduate">POST GRADUATE</option>
+                    </select><br>
+            </div><br>
+            <div>
+                Select Your Blood Group : <input type="radio" name="blood">A positive 
+                    <input type="radio" name="blood">B positive
+                    <input type="radio" name="blood">O positive
+            </div><br>
+            <div>
+                Choose Your Campus : 
+                <label>
+                    <input type="radio" name="campus">DRKIST 
+                </label>
+                <label>
+                    <input type="radio" name="campus">DRKCET
+                </label>
+            </div><br>
+            <div>
+                Select Your Branch :
+                <select name="branch">
+                    <option value="CSE">CSE</option>
+                    <option value="cSM">CSM</option>
+                    <option value="AIML">AIML</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="MCE">MCE</option>
+                </select>
+            </div><br>
+            <div>
+                <center><input type="submit" value="submit" style="margin-right: 50px;"><input type="reset" value="reset"></center>
+            </div></center>
+        </div>
+            </form>
+            </div>
+            </body>
+            </html>
