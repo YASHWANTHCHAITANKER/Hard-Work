@@ -1,0 +1,12 @@
+
+python==3.6.2
+pip install Django==1.11.0
+
+pip install --only-binary :all: mysqlclient
+install mysql
+create password
+go to vscode setting.py, paste the password in databases
+IN cmd by using create database productreview
+then you will get local host id
+PyMySQL==1.0.2
+pytz==2023.3.post1
