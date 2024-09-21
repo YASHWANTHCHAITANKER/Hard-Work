@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="form">
+            <h2>Student Registration Form</h2>
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <div>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required><br>
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number:</label><br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+                    <span id="phoneError" class="error"></span>
+                </div>
+                <div>
+                    <label for="course">Course of Study:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Engineering">Engineering</option>
+                        <option value="Business">Business</option>
+                    </select><br>
+                    <span id="courseError" class="error"></span>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <script>
+            function validateForm() {
+                var fullName = document.getElementById('fullName').value;
+                var email = document.getElementById('email').value;
+                var phoneNumber = document.getElementById('phoneNumber').value;
+                var course = document.getElementById('course').value;
+                var nameRegex = /^[a-zA-Z\s]+$/;
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                var phoneRegex = /^\d{10}$/;
+
+                var isValid = true;
+
+                if (!nameRegex.test(fullName)) {
+                    document.getElementById('nameError').innerHTML = "Please enter a valid name";
+                    isValid = false;
+                } else {
+                    document.getElementById('nameError').innerHTML = "";
+                }
+
+                if (!emailRegex.test(email)) {
+                    document.getElementById('emailError').innerHTML = "Please enter a valid email address";
+                    isValid = false;
+                } else {
+                    document.getElementById('emailError').innerHTML = "";
+                }
+
+                if (!phoneRegex.test(phoneNumber)) {
+                    document.getElementById('phoneError').innerHTML = "Please enter a 10-digit phone number";
+                    isValid = false;
+                } else {
+                    document.getElementById('phoneError').innerHTML = "";
+                }
+
+                if (course === "") {
+                    document.getElementById('courseError').innerHTML = "Please select a course";
+                    isValid = false;
+                } else {
+                    document.getElementById('courseError').innerHTML = "";
+                }
+
+                return isValid;
+            }
+        </script>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+dataset = [
+    ['sunny', 'warm', 'normal', 'strong', 'warm', 'yes'],
+    ['sunny', 'warm', 'high', 'strong', 'warm', 'yes'],
+    ['rainy', 'cold', 'high', 'strong', 'warm', 'no'],
+    ['sunny', 'warm', 'high', 'strong', 'cool', 'yes']
+]
